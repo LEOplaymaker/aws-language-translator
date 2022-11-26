@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+body{
+  padding: 0px;
+  margin: 0px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+input{
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.files{
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.upload{
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: lightgreen;
+  color: green;
+  font-weight: bold;
+  cursor: pointer;
+  width: 30%;
+  font-size: 15px
+}
+
+.fetch{
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: lightblue;
+  color: blue;
+  font-weight: bold;
+  cursor: pointer;
+  width: 30%;
+  font-size: 15px
+}
+
+.delete{
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: lightcoral;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  width: 30%;
+  font-size: 15px
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #5d14d1;
+  width: 25px;
+  height: 25px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  display: none;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#link{
+  display: none;
 }
